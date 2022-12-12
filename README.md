@@ -15,10 +15,25 @@
 </div>
 
   ## Description:
-  [Link to Pre-Deployed Website Database](https://coool-server.herokuapp.com/)
+  [Link to Pre-Deployed Website Database](https://coool-server.herokuapp.com/api/links)
 
   A responsive and mobile friendly application showcasing video projects with an interactive and engaging design.
 
+  ### **Back end:**
+To update the database:
+1. adjust `seedDB.js`
+2. manually deploy new changes to Heroku only
+
+        git push heroku yourbranch:main
+
+3. seed the cloud database
+
+        heroku run bash
+        npm run seed
+
+4. check the database: <br />
+`https://coool-server.herokuapp.com/api/index` <br/>
+`https://coool-server.herokuapp.com/api/links`
 
 ## Table of Contents:
   * [Technologies Used](#technologies)
